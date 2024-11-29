@@ -2,6 +2,8 @@ import { useState, useCallback } from 'react';
 import axios from 'axios';
 import { Upload } from 'lucide-react';
 
+const API_URL = 'https://image-tagging-backend-production.up.railway.app';
+
 function App() {
   const [file, setFile] = useState(null);
   const [preview, setPreview] = useState(null);
@@ -36,7 +38,7 @@ function App() {
     formData.append('image', file);
 
     try {
-      const response = await axios.post('http://localhost:3001/api/analyze', formData, {
+      const response = await axios.post(`${API_URL}/api/analyze`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
