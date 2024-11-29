@@ -2,6 +2,8 @@
 
 Modern React frontend for the AI Image Analysis application, built with Vite, Tailwind CSS, and React.
 
+Backend server repo : https://github.com/amiril84/image-tagging-backend
+
 ## Features
 
 - Modern and responsive UI
